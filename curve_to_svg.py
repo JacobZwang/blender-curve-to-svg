@@ -3,7 +3,7 @@ bl_info = {
     'author': "Aryel Mota Góis",
     'version': (0, 0, 2),
     'blender': (2, 80, 0),
-    'location': "Properties > Data > Export SVG",
+    'location': "Properties > Object > Export SVG",
     'description': "Generate a SVG file from selected 2D Curves",
     'warning': "Curve splines may be inverted, so self intersections can be wrong after export",
     'wiki_url': "https://github.com/aryelgois/blender-curve-to-svg",
@@ -74,7 +74,7 @@ class CurveExportSVGPanel(bpy.types.Panel):
     bl_idname = 'DATA_PT_exportsvg'
     bl_space_type = 'PROPERTIES'
     bl_region_type = 'WINDOW'
-    bl_context = 'data'
+    bl_context = 'object'
 
     def draw(self, context):
         """Draws the Export SVG Panel"""
